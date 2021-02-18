@@ -65,7 +65,7 @@ function show_status($done, $total, $size=30) {
  
     $bar=floor($perc*$size);
  
-    $status_bar="\r[";
+    $status_bar="\r["; //Bí thuật ở chỗ \r
     $status_bar.=str_repeat("=", $bar);
     if($bar<$size){
         $status_bar.=">";
